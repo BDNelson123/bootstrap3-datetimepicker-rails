@@ -673,7 +673,7 @@
                     daysViewHeader.eq(0).addClass('disabled');
                 }
                 if (!isValid(viewDate.clone().add(1, 'M'), 'M')) {
-                    daysViewHeader.eq(2).addClass('disabled');
+                    daysViewHeader.eq(2).addClass('enabled');
                 }
 
                 currentDate = viewDate.clone().startOf('M').startOf('w').startOf('d');
