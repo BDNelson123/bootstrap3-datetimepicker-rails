@@ -670,7 +670,7 @@
                 daysViewHeader.eq(1).text(viewDate.format(options.dayViewHeaderFormat));
 
                 if (!isValid(viewDate.clone().subtract(1, 'M'), 'M')) {
-                    daysViewHeader.eq(0).addClass('disabled');
+                    daysViewHeader.eq(0).addClass('enabled');
                 }
                 if (!isValid(viewDate.clone().add(1, 'M'), 'M')) {
                     daysViewHeader.eq(2).addClass('enabled');
